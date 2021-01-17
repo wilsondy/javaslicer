@@ -99,8 +99,8 @@ public class UntracedArrayList<E> implements List<E> {
     }
 
     /**
-     * Trims the capacity of this <tt>ArrayList</tt> instance to be the list's current size. An application can use
-     * this operation to minimize the storage of an <tt>ArrayList</tt> instance.
+     * Trims the capacity of this ArrayList instance to be the list's current size. An application can use
+     * this operation to minimize the storage of an ArrayList instance.
      */
     public void trimToSize() {
         this.modCount++;
@@ -113,7 +113,7 @@ public class UntracedArrayList<E> implements List<E> {
     }
 
     /**
-     * Increases the capacity of this <tt>ArrayList</tt> instance, if necessary, to ensure that it can hold at least
+     * Increases the capacity of this ArrayList instance, if necessary, to ensure that it can hold at least
      * the number of elements specified by the minimum capacity argument.
      *
      * @param minCapacity
@@ -144,9 +144,9 @@ public class UntracedArrayList<E> implements List<E> {
     }
 
     /**
-     * Returns <tt>true</tt> if this list contains no elements.
+     * Returns true if this list contains no elements.
      *
-     * @return <tt>true</tt> if this list contains no elements
+     * @return true if this list contains no elements
      */
     @Override
 	public boolean isEmpty() {
@@ -154,13 +154,13 @@ public class UntracedArrayList<E> implements List<E> {
     }
 
     /**
-     * Returns <tt>true</tt> if this list contains the specified element. More formally, returns <tt>true</tt> if
-     * and only if this list contains at least one element <tt>e</tt> such that
-     * <tt>(o==null&nbsp;?&nbsp;e==null&nbsp;:&nbsp;o.equals(e))</tt>.
+     * Returns true if this list contains the specified element. More formally, returns true if
+     * and only if this list contains at least one element e such that
+     * (o==null&nbsp;?&nbsp;e==null&nbsp;:&nbsp;o.equals(e)).
      *
      * @param o
      *            element whose presence in this list is to be tested
-     * @return <tt>true</tt> if this list contains the specified element
+     * @return true if this list contains the specified element
      */
     @Override
 	public boolean contains(final Object o) {
@@ -169,8 +169,8 @@ public class UntracedArrayList<E> implements List<E> {
 
     /**
      * Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not
-     * contain the element. More formally, returns the lowest index <tt>i</tt> such that
-     * <tt>(o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i)))</tt>, or -1 if there is no such index.
+     * contain the element. More formally, returns the lowest index i such that
+     * (o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i))), or -1 if there is no such index.
      */
     @Override
 	public int indexOf(final Object o) {
@@ -188,8 +188,8 @@ public class UntracedArrayList<E> implements List<E> {
 
     /**
      * Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not
-     * contain the element. More formally, returns the highest index <tt>i</tt> such that
-     * <tt>(o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i)))</tt>, or -1 if there is no such index.
+     * contain the element. More formally, returns the highest index i such that
+     * (o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i))), or -1 if there is no such index.
      */
     @Override
 	public int lastIndexOf(final Object o) {
@@ -232,7 +232,7 @@ public class UntracedArrayList<E> implements List<E> {
      *
      * <p>
      * If the list fits in the specified array with room to spare (i.e., the array has more elements than the list), the
-     * element in the array immediately following the end of the collection is set to <tt>null</tt>. (This is useful
+     * element in the array immediately following the end of the collection is set to null. (This is useful
      * in determining the length of the list <i>only</i> if the caller knows that the list does not contain any null
      * elements.)
      *
@@ -307,7 +307,7 @@ public class UntracedArrayList<E> implements List<E> {
      *
      * @param e
      *            element to be appended to this list
-     * @return <tt>true</tt> (as specified by {@link Collection#add})
+     * @return true (as specified by {@link Collection#add})
      */
     @Override
 	public boolean add(final E e) {
@@ -366,14 +366,14 @@ public class UntracedArrayList<E> implements List<E> {
 
     /**
      * Removes the first occurrence of the specified element from this list, if it is present. If the list does not
-     * contain the element, it is unchanged. More formally, removes the element with the lowest index <tt>i</tt> such
-     * that <tt>(o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i)))</tt> (if such an element exists).
-     * Returns <tt>true</tt> if this list contained the specified element (or equivalently, if this list changed as a
+     * contain the element, it is unchanged. More formally, removes the element with the lowest index i such
+     * that (o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i))) (if such an element exists).
+     * Returns true if this list contained the specified element (or equivalently, if this list changed as a
      * result of the call).
      *
      * @param o
      *            element to be removed from this list, if present
-     * @return <tt>true</tt> if this list contained the specified element
+     * @return true if this list contained the specified element
      */
     @Override
 	public boolean remove(final Object o) {
@@ -427,7 +427,7 @@ public class UntracedArrayList<E> implements List<E> {
      *
      * @param c
      *            collection containing elements to be added to this list
-     * @return <tt>true</tt> if this list changed as a result of the call
+     * @return true if this list changed as a result of the call
      * @throws NullPointerException
      *             if the specified collection is null
      */
@@ -451,7 +451,7 @@ public class UntracedArrayList<E> implements List<E> {
      *            index at which to insert the first element from the specified collection
      * @param c
      *            collection containing elements to be added to this list
-     * @return <tt>true</tt> if this list changed as a result of the call
+     * @return true if this list changed as a result of the call
      * @throws IndexOutOfBoundsException
      *             {@inheritDoc}
      * @throws NullPointerException
